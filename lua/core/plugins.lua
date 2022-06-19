@@ -119,16 +119,17 @@ local packer_install_tbl = {
         after = { "nvim-cmp" },
     },
     ["kristijanhusak/vim-dadbod-completion"] = { -- complete completion for dadbod  (it may affect performance)
+        disable = true,
         ptp = "viml",
         after = { "nvim-cmp" },
     },
     ["tzachar/cmp-tabnine"] = { -- AI smart completion (it may affect performance)
-        disable = false,
+        disable = true,
         run = "./install.sh",
         after = { "nvim-cmp" },
     },
     ["github/copilot.vim"] = { -- AI smart completion
-        disable = false,
+        disable = true,
         ptp = "viml",
         event = { "InsertEnter" },
     },
@@ -152,10 +153,12 @@ local packer_install_tbl = {
 	=====================================
 	--]]
     ["tpope/vim-dadbod"] = { -- core tool for linking databases
+        disable = true,
         ptp = "viml",
         fn = { "db#resolve" },
     },
     ["kristijanhusak/vim-dadbod-ui"] = { -- quick link database
+        disable = true,
         ptp = "viml",
         cmd = "DBUIToggle",
     },
@@ -226,9 +229,11 @@ local packer_install_tbl = {
         module = "telescope",
     },
     ["tami5/sqlite.lua"] = { -- persistent storage history yank records
+        disable = true,
         after = { "impatient.nvim" },
     },
     ["AckslD/nvim-neoclip.lua"] = { -- can be used to quickly view historical yank records
+        disable = true,
         after = { "sqlite.lua" },
     },
     ["nvim-pack/nvim-spectre"] = { -- Text replacement and retrieval tool for all items
@@ -294,6 +299,7 @@ local packer_install_tbl = {
         module = "toggleterm",
     },
     ["uga-rosa/translate.nvim"] = { -- an excellent translation plugin
+        disable = true,
         cmd = { "Translate" },
     },
     ["jghauser/mkdir.nvim"] = {
