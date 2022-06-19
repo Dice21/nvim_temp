@@ -1,3 +1,5 @@
+This nvim config is originally created by [askfiy](https://github.com/askfiy/nvim/).
+
 # Documentation
 
 <details>
