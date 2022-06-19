@@ -26,7 +26,7 @@ local options = {
     -- download source (for LSP server, treesitter parser, and various plugin downloads)
     -- • https://github.com/
     -- • https://hub.fastgit.xyz/
-    download_source = "https://github.com/",
+    download_source = "https://hub.fastgit.xyz/",
 }
 
 -- database link configuration
